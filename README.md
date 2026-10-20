@@ -2,7 +2,7 @@
 <h1 align="center">Hey, I'm Ahmet Can Yalçınkaya 👋</h1>
 
 <h3 align="center">
-  Full-Stack Developer | Java & Spring Boot
+  Full-Stack Developer
 </h3>
 
 <p align="center">
