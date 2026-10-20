@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      # Generate Snake
+      # Generate Snake contribution graph
       - name: Generate Snake
         uses: Platane/snk@master
         with:
@@ -24,13 +24,27 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # Generate Pac-Man
+      # Back up Snake files before Pac-Man generation
+      - name: Preserve Snake files
+        run: |
+          mkdir -p snake-backup
+          cp dist/github-contribution-grid-snake.svg snake-backup/
+          cp dist/github-contribution-grid-snake-dark.svg snake-backup/
+
+      # Generate Pac-Man contribution graph
       - name: Generate Pac-Man
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ahmetyalcinkya
           games: pacman
           hide_month_labels: "false"
+
+      # Restore Snake files into the final output directory
+      - name: Restore Snake files
+        run: |
+          mkdir -p dist
+          cp snake-backup/github-contribution-grid-snake.svg dist/
+          cp snake-backup/github-contribution-grid-snake-dark.svg dist/
 
       # Publish both animations
       - name: Publish contribution animations
