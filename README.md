@@ -145,7 +145,7 @@ I'm a Full-Stack Developer with a strong focus on Java and backend development. 
 ---
 
 
-<h3 align="center">🐍 GitHub Contribution Snake</h3>
+<!-- <h3 align="center">🐍 GitHub Contribution Snake</h3>
 
 <p align="center">
   <picture>
@@ -163,7 +163,7 @@ I'm a Full-Stack Developer with a strong focus on Java and backend development. 
       width="100%"
     />
   </picture>
-</p>
+</p> -->
 
 <h3 align="center">👾 Pac-Man Contribution Graph</h3>
 
