@@ -166,3 +166,13 @@ I'm a Full-Stack Developer with a strong focus on Java and backend development. 
 <p align="center">
   <i>Always learning. Always building. Always improving.</i>
 </p>
+
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/ahmetyalcinkya/ahmetyalcinkya/output/pacman-contribution-graph.svg"
+    alt="Pac-Man GitHub contribution graph"
+    width="100%"
+  />
+</p>
+
