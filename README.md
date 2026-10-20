@@ -144,35 +144,43 @@ I'm a Full-Stack Developer with a strong focus on Java and backend development. 
 
 ---
 
-## 🐍 Contribution Journey
 
-<center>
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
-  />
-  <img
-    alt="github contribution grid snake animation"
-    src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
-  />
-</picture>
-</center>
+<h3 align="center">🐍 GitHub Contribution Snake</h3>
 
 <p align="center">
-  <i>Always learning. Always building. Always improving.</i>
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/ahmetyalcinkya/ahmetyalcinkya/output/github-contribution-grid-snake-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/ahmetyalcinkya/ahmetyalcinkya/output/github-contribution-grid-snake.svg"
+    />
+    <img
+      alt="GitHub contribution snake animation"
+      src="https://raw.githubusercontent.com/ahmetyalcinkya/ahmetyalcinkya/output/github-contribution-grid-snake.svg"
+      width="100%"
+    />
+  </picture>
 </p>
 
+<h3 align="center">👾 Pac-Man Contribution Graph</h3>
 
 <p align="center">
-  <img
-    src="https://raw.githubusercontent.com/ahmetyalcinkya/ahmetyalcinkya/output/pacman-contribution-graph.svg"
-    alt="Pac-Man GitHub contribution graph"
-    width="100%"
-  />
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/ahmetyalcinkya/ahmetyalcinkya/output/pacman-contribution-graph-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/ahmetyalcinkya/ahmetyalcinkya/output/pacman-contribution-graph.svg"
+    />
+    <img
+      alt="Pac-Man contribution graph animation"
+      src="https://raw.githubusercontent.com/ahmetyalcinkya/ahmetyalcinkya/output/pacman-contribution-graph.svg"
+      width="100%"
+    />
+  </picture>
 </p>
-
