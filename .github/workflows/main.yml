@@ -1,4 +1,5 @@
-name: Generate Snake and Pac-Man
+
+name: Generate Pac-Man Contribution Graph
 
 on:
   schedule:
@@ -9,36 +10,32 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
 
     steps:
-      - name: Generate Snake
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ahmetyalcinkya
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
       - name: Generate Pac-Man
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ahmetyalcinkya
-          games: pacman
+          github_repo_name: ahmetyalcinkya
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          outputs: |
+            dist/pacman-contribution-graph.svg
+            dist/pacman-contribution-graph-dark.svg
+          theme: github
           hide_month_labels: "false"
 
-      - name: Check generated files
+      - name: Verify generated files
         run: |
           echo "Generated SVG files:"
           find dist -maxdepth 1 -type f -name "*.svg" -print
-          test -f dist/github-contribution-grid-snake.svg
-          test -f dist/github-contribution-grid-snake-dark.svg
+
           test -f dist/pacman-contribution-graph.svg
           test -f dist/pacman-contribution-graph-dark.svg
 
-      - name: Publish both animations
+      - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
